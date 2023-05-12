@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Galada&display=swap');
+
+html, body{
+    font-family: 'Galada';
+    width: 100%;
+}
+
+
+.container-fluid{
+    background-image:url('../images/sunrises.jfif');
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:200px;
+}
+
+.menu{
+    margin: auto;
+}
+
+.menu .logo{
+    float: left;
+    margin: 20px;
+}
+
+.titol{
+    height:0px;
+    padding-top: 30px;
+    font-size:1.5em;
+    font-family: 'Carter One';
+}
+
+.menu .punts{
+    float: right;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.menu .punts li{
+   display: inline-block;
+   width:100px;
+   font-size: 1.2em;
+}
+
+.menu .punts .excepcion{
+   margin: 20px; 
+}
+
+.logo_gall{
+    border: 2px solid black;
+    border-radius: 120px;
+    width: 100px;
+    height: 130px;
+}
+
+.intro{
+    width:100%;
+    height: 150px;
+    font-family: 'Carter One';
+    text-align: center;
+}
+
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 10px;
+  }
+  
+  .info-text {
+    flex: 1;
+    margin-right: 50px;
+  }
+  
+  .info-image {
+    flex: 1;
+  }
+  
+  .info-image img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+   
+  }
+  
+  .gallery-item {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    overflow: hidden;
+    color: lightgrey;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+
+  .map-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 10px;
+    text-align: center;
+    margin-top: 500px;
+  }
+  
+  .map-container {
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+  }
+  
+  .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  .contact-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 10px;
+    text-align: center;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .contact-info {
+    flex-basis: 40%;
+    max-width: 400px;
+    text-align: left;
+    margin-right: 20px;
+  }
+  
+  .contact-info p {
+    margin: 0 0 20px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .contact-info i {
+    margin-right: 10px;
+    color: #28a745;
+  }
+  
+  .contact-form {
+    flex-basis: 60%;
+    max-width: 600px;
+    text-align: left;  
+    color: lightgrey;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-image:url('../images/sunrises.jfif');
+    background-repeat:no-repeat;
+    background-size:cover;
+    color: #333;
+    padding: 20px;
+    margin: auto;
+    font-size: 14px; /* Tamaño de fuente */
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+
+  .intermitente{
+    animation-name: intermitente;
+    animation-duration: 0.2s;
+    animation-timing-function: 0.2s;
+    animation-iteration-count: infinite;
+
+  }
+  .intermitente :hover{
+    animation-name: intermitente2;
+    animation-duration: 0.2s;
+    animation-timing-function: 0.2s;
+    animation-iteration-count: infinite;
+    position: relative;
+
+  }
+
+  @keyframes intermitente {
+    from { background-color: #28a745;
+    }
+    to{
+      background-color: red;
+    }
+  }
+
+  @keyframes intermitente2 {
+    from { 
+      right: 0px;
+    }
+    to{
+      right: -200px;
+    }
+  }
+
+  
+  
